@@ -1,0 +1,73 @@
+/* Experience Card */
+.experience-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent background for dark themes */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+    text-align: left; /* Align content to the left for a business report feel */
+    border-left: 4px solid #ff9800; /* Orange accent for a professional highlight */
+  }
+  
+  /* Hover Effects */
+  .experience-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  /* Title */
+  .experience-card h3 {
+    font-size: 1.5rem;
+    color: #ff9800; /* Orange title for visual hierarchy */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Company Name */
+  .experience-card h4 {
+    font-size: 1.2rem;
+    color: #3498db; /* Blue for company name */
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+  }
+  
+  /* Duration */
+  .experience-card p strong {
+    color: #2C3E50; /* Dark text for duration label */
+    font-weight: bold;
+  }
+  
+  /* Description */
+  .experience-card p {
+    color: #f0f4f8; /* Light text for readability on dark background */
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .experience-card {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .experience-card h3 {
+      font-size: 1.3rem; /* Adjust title size */
+    }
+  
+    .experience-card h4 {
+      font-size: 1.1rem; /* Adjust company name size */
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .experience-card {
+      padding: 1.8rem; /* Add slightly more padding for portrait */
+    }
+  }
+  
+  @media (orientation: landscape) {
+    .experience-card {
+      padding: 2rem; /* Standard padding for landscape */
+    }
+  }
+  

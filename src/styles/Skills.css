@@ -1,0 +1,77 @@
+.skills-section {
+  width: 100vw; /* Full viewport width */
+  text-align: center;
+  background: linear-gradient(to bottom, #2C3E50, #1A252F); /* Matches About colors */
+  color: white; /* White text for contrast */
+  padding: 4rem 0;
+}
+
+/* Skills Title */
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ff9800; /* Highlighted orange */
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%; /* Ensure it doesn't exceed the container */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Consistent padding to avoid overflow */
+}
+
+
+/* Skill Card */
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #ff9800; /* Matches the accent color */
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  color: white; /* Maintain white text */
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #ccc; /* Subtle text color */
+}
+
+/* Portrait Orientation */
+@media (orientation: portrait) {
+  .skills-section {
+    padding: 5rem 0; /* Increased padding for vertical space */
+  }
+
+  .skill-card {
+    padding: 1.2rem; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) {
+  .skills-section {
+    padding: 3rem 0; /* Standard padding for horizontal space */
+  }
+}

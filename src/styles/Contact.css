@@ -1,0 +1,87 @@
+/* Contact Section */
+.contact-section {
+  width: 100%; /* Full width to prevent horizontal scrolling */
+  background: linear-gradient(to bottom, #2C3E50, #1A252F); /* Matches About and Experience theme */
+  color: white; /* Consistent text color for dark backgrounds */
+  padding: 5rem 2rem; /* Add vertical and horizontal padding */
+  text-align: center;
+}
+
+/* Title */
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #ff9800; /* Highlight title with orange */
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px; /* Shrink form width for better spacing */
+  margin: 0 auto; /* Center the form */
+  background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+  padding: 2.5rem; /* Add internal padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for form elevation */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem; /* Add spacing between inputs */
+}
+
+/* Form Control */
+.form-control {
+  width: 100%; /* Full width input */
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  color: white; /* White text for readability */
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff9800; /* Highlighted border on focus */
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #3498DB; /* Professional blue */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #E74C3C; /* Red hover effect for prominence */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Portrait Orientation */
+@media (orientation: portrait) {
+  .contact-section {
+    padding: 6rem 1.5rem; /* Add vertical and horizontal padding for taller screens */
+  }
+
+  .contact-form {
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) {
+  .contact-section {
+    padding: 4rem 2rem; /* Adjust padding for horizontal layouts */
+  }
+
+  .contact-form {
+    max-width: 450px; /* Reduce form width slightly for landscape */
+  }
+}

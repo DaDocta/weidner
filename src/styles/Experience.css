@@ -1,0 +1,25 @@
+/* Experience Section */
+.experience-section {
+    width: 100%; /* Full width to avoid scrolling */
+    background: linear-gradient(to bottom, #2C3E50, #1A252F); /* Matches the overall theme */
+    color: white;
+    padding: 4rem 0; /* Spacing around the section */
+    text-align: center;
+  }
+  
+  .experience-section h2 {
+    font-size: 2.5rem;
+    color: #ff9800; /* Highlight title with orange */
+    margin-bottom: 3rem;
+  }
+  
+  /* Experience Container */
+  .experience-container {
+    max-width: 1200px; /* Constrain content width */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    padding: 0 1rem; /* Padding for smaller screens */
+  }
+  
