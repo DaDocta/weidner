@@ -47,14 +47,6 @@ const Gallery = () => {
           ))}
         </div>
       </div>
-      <a
-        href="https://www.behance.net/YourBehance" // Replace with your portfolio link
-        target="_blank"
-        rel="noopener noreferrer"
-        className="view-portfolio"
-      >
-        View full portfolio
-      </a>
     </section>
   );
 };
