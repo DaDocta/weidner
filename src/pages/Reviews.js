@@ -11,15 +11,15 @@ const reviews = [
     feedback: "I love Nate's passion to help and inspire others."
   },
   {
-    name: "He's cool",
-    feedback: 'Luke Fedders.'
+    name: "Luke Fedders",
+    feedback: "He's cool."
   },
 ];
 
 const Reviews = () => {
   return (
     <section id="reviews" className="reviews">
-      <h2 className="reviews-title">What My Clients Say</h2>
+      <h2 className="reviews-title">Here Are Some Reviews</h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
           <div key={index} className={`review-item bubble-${index % 2 === 0 ? 'left' : 'right'}`}>

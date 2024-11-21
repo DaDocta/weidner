@@ -23,7 +23,7 @@ const services = [
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
-      <h2 className="skills-title">What I Do</h2>
+      <h2 className="skills-title">My Skillset</h2>
       <div className="skills-grid">
         {services.map((service, index) => (
           <div key={index} className="skill-card">
