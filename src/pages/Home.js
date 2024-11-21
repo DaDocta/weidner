@@ -19,7 +19,7 @@ const Home = () => {
             <span className="tertiary">Transform.</span>
           </h1>
           <p className="tagline">
-          "Creating visuals that inspire and drive results."
+          "Creating visuals that drive results."
           </p>
           <a href="#about" className="cta-button">Know Me Better</a>
         </div>

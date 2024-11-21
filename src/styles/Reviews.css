@@ -1,6 +1,6 @@
 /* Reviews Section */
 .reviews {
-  background: linear-gradient(135deg, #1a1a1a, #333333);
+  background: linear-gradient(135deg, #1e1e1e, #0d0d0d);
   color: #f9f9f9;
   padding: 100px 5%;
   text-align: center;
@@ -10,7 +10,7 @@
 .reviews-title {
   font-size: 3rem;
   font-weight: bold;
-  color: #fdcd1e;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 
