@@ -1,0 +1,138 @@
+/* Reviews Section */
+.reviews {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  color: #f9f9f9;
+  padding: 100px 5%;
+  text-align: center;
+}
+
+/* Title */
+.reviews-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fdcd1e;
+  margin-bottom: 50px;
+}
+
+/* Reviews Container */
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Horizontally spaced */
+  gap: 5rem; /* Larger spacing between items */
+  position: relative;
+}
+
+/* Review Item */
+.review-item {
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  position: relative;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: rotate(-2deg); /* Slant */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+  transform: rotate(0deg); /* Straighten on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Alternating Bubble Slants */
+.bubble-left {
+  transform: rotate(-3deg) translateX(-5%);
+}
+
+.bubble-right {
+  transform: rotate(3deg) translateX(5%);
+}
+
+/* Feedback Text */
+.review-feedback {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #f9f9f9;
+}
+
+/* Review Name */
+.review-name {
+  font-size: 1rem;
+  color: #fdcd1e;
+  text-align: right;
+}
+
+/* Tips Text */
+.review-tip {
+  font-size: 0.9rem;
+  color: #828282; /* Tertiary color for tips */
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* Speech Bubble Pointer */
+.review-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  bottom: -15px;
+}
+
+.bubble-left::after {
+  left: 20px;
+  border-width: 15px 15px 0 0;
+  border-color: rgba(255, 255, 255, 0.08) transparent transparent transparent;
+}
+
+.bubble-right::after {
+  right: 20px;
+  border-width: 15px 0 0 15px;
+  border-color: rgba(255, 255, 255, 0.08) transparent transparent transparent;
+}
+
+/* Portrait Mode */
+@media (orientation: portrait) {
+  .reviews-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .bubble-left,
+  .bubble-right {
+    transform: rotate(0) translateX(0);
+    text-align: center;
+  }
+
+  .review-tip {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .review-item::after {
+    display: block; /* Tips still visible */
+  }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) {
+  .reviews-container {
+    flex-direction: row;
+    gap: 6rem; /* Wider horizontal spacing */
+  }
+
+  .bubble-left,
+  .bubble-right {
+    transform: rotate(-3deg) translateX(-5%);
+  }
+
+  .review-tip {
+    display: block;
+    text-align: left;
+  }
+}

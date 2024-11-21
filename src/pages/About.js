@@ -1,46 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/About.css';
-import Picture from '../assets/Picture.jpg';
-import { FaLightbulb, FaBriefcase, FaUsers } from 'react-icons/fa'; // Icons for business theme
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 } // Trigger when 30% of the section is visible
+    );
+
+    const section = document.getElementById('about');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   return (
-    <div className="about-section">
+    <section id="about" className={`about ${isVisible ? 'visible' : ''}`}>
       <div className="about-content">
-        <div className="about-text">
-          <h2 className="about-title">About Me</h2>
-          <p>
-            Hi, I'm Lucas Fedders, a driven leader and problem solver passionate about 
-            innovation and strategy. My journey began as a go-kart mechanic, where I honed 
-            troubleshooting and creative thinking skills. 
-          </p>
-          <p>
-            As a varsity soccer player and Young Life leader, I've developed leadership 
-            qualities and the ability to inspire and collaborate effectively. My goal is 
-            to drive meaningful impact in the business world through innovative solutions.
-          </p>
-          <div className="about-icons">
-            <div className="icon-item">
-              <FaLightbulb className="icon" />
-              <span>Problem Solver</span>
-            </div>
-            <div className="icon-item">
-              <FaBriefcase className="icon" />
-              <span>Strategic Thinker</span>
-            </div>
-            <div className="icon-item">
-              <FaUsers className="icon" />
-              <span>Team Leader</span>
-            </div>
-          </div>
-        </div>
-        <img 
-          src={Picture}
-          alt="Lucas Fedders" 
-          className="about-image" 
-        />
+        <h2>What's Good? I'm Nate Weidner</h2>
+        <p>I’m passionate about Graphic Design. Check out some of my work from over the years!</p>
+        <a href="#gallery" className="cta-button">See My Work!</a>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,18 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import Placeholder from '../assets/Placeholder.png';
 import '../styles/Home.css';
 
 const Home = () => {
   return (
-    <div className="home-page">
-      <div className="hero-section">
-        <h1>Welcome to Lucas Fedders' Professional Portfolio</h1>
-        <p>
-          I am Lucas Fedders, a dedicated leader, problem solver, and aspiring business professional. My background spans
-          hands-on mechanical work as a go-kart mechanic, leadership roles in Young Life, and the discipline of a varsity athlete.
-        </p>
-        <Link to="/portfolio" className="portfolio-link">Explore My Work</Link>
-      </div>
+    <div className="area">
+      <ul className="circles">
+        {/* Render 10 floating circles */}
+        {[...Array(10)].map((_, i) => (
+          <li key={i}></li>
+        ))}
+      </ul>
+      <section id="home" className="home">
+        <div className="home-content">
+          <h1 className="headline">
+            <span className="primary">Create.</span>
+            <span className="secondary">Inspire.</span>
+            <span className="tertiary">Transform.</span>
+          </h1>
+          <p className="tagline">
+            "Designing visuals that captivate, communicate, and connect with your audience."
+          </p>
+          <a href="#about" className="cta-button">Explore More</a>
+        </div>
+        <div className="home-image">
+          <img src={Placeholder} alt="Creative Design" />
+        </div>
+      </section>
     </div>
   );
 };
