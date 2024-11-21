@@ -14,14 +14,14 @@ const Home = () => {
       <section id="home" className="home">
         <div className="home-content">
           <h1 className="headline">
-            <span className="primary">Create.</span>
-            <span className="secondary">Inspire.</span>
+            <span className="primary">Design.</span>
+            <span className="secondary">Collaborate.</span>
             <span className="tertiary">Transform.</span>
           </h1>
           <p className="tagline">
-            "Designing visuals that captivate, communicate, and connect with your audience."
+          "Creating visuals that inform, inspire, and drive results."
           </p>
-          <a href="#about" className="cta-button">Explore More</a>
+          <a href="#about" className="cta-button">Know Me Better</a>
         </div>
         <div className="home-image">
           <img src={Placeholder} alt="Creative Design" />

@@ -3,16 +3,16 @@ import '../styles/Reviews.css';
 
 const reviews = [
   {
-    name: 'Client A',
-    feedback: 'Nate did an amazing job with our brand redesign. Highly recommended!'
+    name: 'Garrett Strange',
+    feedback: 'Nate helped me with my logo. I love it!'
   },
   {
-    name: 'Client B',
-    feedback: 'Professional and creative. The logo design exceeded our expectations.'
+    name: 'Garrett Strange (Again)',
+    feedback: "I love Nate's passion to help and inspire others."
   },
   {
-    name: 'Client C',
-    feedback: 'The custom backgrounds Nate provided completely transformed our social media aesthetic.'
+    name: "He's cool",
+    feedback: 'Luke Fedders.'
   },
 ];
 
